@@ -1,0 +1,95 @@
+ul {
+    list-style-type: none;
+    margin: -10px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: black;
+}
+li {
+    float: left;
+}
+li a {
+    font-size: 25px;
+    padding: 15px;
+    color: white;
+}
+
+table, td{
+    margin: 35px;
+    font-size: 25px;
+    border: 1px solid black;
+}
+table {
+    padding: 2px;
+}
+td {
+    padding: 5px;
+}
+.background {
+    background-color: lightblue;
+    height: 570px;
+    width: 880px;
+}
+.above-background {
+    position: relative;
+    top: 200px;
+    left: 100px;
+    background-color: lightgreen;
+    height: 200px;
+    width: 350px;z-index: 1;
+}
+.above-background>h1 {
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}
+.under-background {
+    position: relative;
+    top: 50px;
+    left: 300px;
+    background-color: lightcoral;
+    height: 200px;
+    width: 500px;
+}
+.under-background>h1 {
+    position: absolute;
+    top: -15px;
+    left: 400px;
+}
+
+.btn-group {
+    margin: 30px;
+}
+.list-group {
+    width: 50%;
+    margin: 30px;
+    background-color: initial;
+}
+ol>li {
+    float: initial;
+    font-size: 20px;
+}
+
+p {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 599px) {
+    ul {
+        background-color: white;
+        border: 3px solid black;
+    }
+    li {
+        float: initial;
+    }
+    li a {
+        font-size: 20px;
+        display: block;
+        color: black;
+        padding: 0px;
+        margin-left: 5px;
+    }
+}
